@@ -15,6 +15,9 @@ namespace SmartTicket.Entities
         [DisplayName("Kategori Adı")]
         public string Name { get; set; }
 
+        [StringLength(30), ScaffoldColumn(false)]
+        public string ProfileImageFilename { get; set; }
+
         public virtual ICollection<Activity> Activities { get; set; }
 
 
